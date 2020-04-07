@@ -1,0 +1,75 @@
+## pip3 and pip would make a difference only when you are not using any environment managers like virualenv (or) conda.
+## Now as we have created a conda environment which has python==3.6, pip would be equivalent to pip3
+
+## Install miniconda/anaconda
+https://docs.conda.io/en/latest/miniconda.html
+## Check conda version
+conda --version
+## Conda Update
+conda update conda
+## Create Virtual Env
+conda create -n botenv python=3.6
+## Activate Virtual Env
+conda activate botenv
+
+##Initial commands to install Rasa NLU to Virtual Env i.e. botenv
+pip install rasa_nlu
+## To Update existing one
+pip install -U rasa_nlu
+
+## For dependecnies
+##spaCy+sklearn
+pip install rasa_nlu[spacy]
+python -m spacy download en_core_web_md
+python -m spacy link en_core_web_md en
+
+##Tensorflow
+pip install rasa_nlu[tensorflow]
+
+## Train Rasa NLU
+python -m rasa_nlu.train -c nlu_config.yml --data data/nlu.md -o models --fixed_model_name nlu --project current --verbose
+
+## Run Rasa NLU
+python -m rasa_nlu.server --path ./models
+
+##Initial commands to install Rasa Core & SDK
+pip install rasa_core
+## To Update existing one
+pip install -U rasa_core
+
+pip install rasa_core_sdk
+
+##Train Rasa Core
+python -m rasa_core.train -d domain.yml -s data/stories.md -o models/dialogue -c policy.yml
+
+python -m rasa_core.train interactive -o models/dialogue -d domain.yml -c policy.yml -s data/stories.md --nlu models/current/nlu --endpoints endpoints.yml
+
+## Run Rasa Core
+python -m rasa_core.run -d models/dialogue -u models/current/nlu
+python -m rasa_core.run -d models/dialogue -u models/current/nlu --port 5002 --credentials credentials.yml
+
+# Debug Rasa Core
+python -m rasa_core.run -d models/dialogue -u models/current/nlu --debug
+s
+
+##Python
+##Train and Run NLU
+python nlu_model.py
+
+## Train CORE interactive
+python train_core_interactive .py
+
+## To run the custom action
+python -m rasa_core_sdk.endpoint --actions actions
+
+
+## NLU runs on port 5000
+## Core runs on port 5005
+## Action runs on port 5055
+
+
+rasa run -m models/current/nlu --enable-api --cors “*” --debug
+
+
+
+

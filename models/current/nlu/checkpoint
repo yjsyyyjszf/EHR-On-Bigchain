@@ -1,0 +1,2 @@
+model_checkpoint_path: "C:\\Users\\ASUS\\Desktop\\chatbot\\./models\\current\\nlu\\component_5_EmbeddingIntentClassifier.ckpt"
+all_model_checkpoint_paths: "C:\\Users\\ASUS\\Desktop\\chatbot\\./models\\current\\nlu\\component_5_EmbeddingIntentClassifier.ckpt"
