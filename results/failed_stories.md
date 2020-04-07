@@ -21,9 +21,9 @@
     - utter_cheer_up   <!-- predicted: utter_bye -->
     - utter_did_that_help   <!-- predicted: action_listen -->
     - action_listen   <!-- predicted: utter_bye -->
-* affirm: yes   <!-- predicted: greet: yes -->
+* affirm: yes   <!-- predicted: bye: yes -->
     - utter_happy   <!-- predicted: action_listen -->
-    - action_listen   <!-- predicted: utter_greet -->
+    - action_listen   <!-- predicted: utter_bye -->
 
 
 ## sad path 2
