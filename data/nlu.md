@@ -1,10 +1,10 @@
 ## intent:ask_name
-- My name is [Arun](name)
-- I am [Abhinav](name)
-- I'm [Shrutika](name)
-- People call me [Billy](name)
-- You can call me [Arun](name)
-- My name is [Arun](name:arun)
+- My name is [Vedant](name)
+- I am [Pratik](name)
+- I'm [Vedant](name)
+- People call me [Elvis](name)
+- You can call me [Vedant](name)
+- My name is [Vedant](name:Vedant)
 
 ## intent:bye
 - bye
@@ -115,5 +115,5 @@
 - I want to thank you
 - thanks
 
-## synonym:arun
-- Arun
+## synonym:Vedant
+- Vedant

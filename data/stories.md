@@ -7,8 +7,8 @@
     - utter_thank
 
 ## story_3
-* ask_name{"name": "abhinav"}
-    - slot{"name": "abhinav"}
+* ask_name{"name": "Elvis"}
+    - slot{"name": "Elvis"}
     - utter_greet
 
 ## story_4
@@ -29,8 +29,8 @@
     - utter_greet
 * thank
     - utter_thank
-* ask_name{"name": "arun"}
-    - slot{"name": "arun"}
+* ask_name{"name": "Vedant"}
+    - slot{"name": "Vedant"}
     - utter_greet
 * medicine{"symptom": "asthma"}
     - slot{"symptom": "asthma"}
