@@ -1,0 +1,132 @@
+2020-04-07 23:02:23,197 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-04-07 23:03:16,478 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-04-07 23:03:43,839 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-04-07 23:05:17,687 [DEBUG]  Available web server routes: 
+/conversations/<conversation_id>/messages          POST                           add_message
+/conversations/<conversation_id>/tracker/events    POST                           append_events
+/webhooks/rasa                                     GET                            custom_webhook_RasaChatInput.health
+/webhooks/rasa/webhook                             POST                           custom_webhook_RasaChatInput.receive
+/webhooks/rest                                     GET                            custom_webhook_RestInput.health
+/webhooks/rest/webhook                             POST                           custom_webhook_RestInput.receive
+/model/test/intents                                POST                           evaluate_intents
+/model/test/stories                                POST                           evaluate_stories
+/conversations/<conversation_id>/execute           POST                           execute_action
+/domain                                            GET                            get_domain
+/socket.io                                         GET                            handle_request
+/                                                  GET                            hello
+/model                                             PUT                            load_model
+/model/parse                                       POST                           parse
+/conversations/<conversation_id>/predict           POST                           predict
+/conversations/<conversation_id>/tracker/events    PUT                            replace_events
+/conversations/<conversation_id>/story             GET                            retrieve_story
+/conversations/<conversation_id>/tracker           GET                            retrieve_tracker
+/webhooks/socketio                                 GET                            socketio_webhook.health
+/status                                            GET                            status
+/model/predict                                     POST                           tracker_predict
+/model/train                                       POST                           train
+/conversations/<conversation_id>/trigger_intent    POST                           trigger_intent
+/model                                             DELETE                         unload_model
+/version                                           GET                            version
+2020-04-07 23:05:17,689 [INFO ]  Starting Rasa server on http://localhost:5005
+2020-04-07 23:05:17,690 [DEBUG]  Using the default number of Sanic workers (1).
+2020-04-07 23:05:17,693 [INFO ]  Enabling coroutine debugging. Loop id 2223042265992.
+2020-04-07 23:05:17,982 [DEBUG]  Extracted model to 'C:\Users\ASUS\AppData\Local\Temp\tmpnf2t41cm'.
+2020-04-07 23:05:18,476 [DEBUG]  Loading the model ...
+2020-04-07 23:05:20,174 [DEBUG]  Finished loading the model.
+2020-04-07 23:05:20,175 [DEBUG]  Building tensorflow prediction graph...
+2020-04-07 23:05:24,521 [DEBUG]  Finished building tensorflow prediction graph.
+2020-04-07 23:05:24,523 [DEBUG]  Failed to load model for 'ResponseSelector'. Maybe you did not provide enough training data and no model was trained or the path 'C:\Users\ASUS\AppData\Local\Temp\tmpnf2t41cm\nlu' doesn't exist?
+2020-04-07 23:05:24,532 [DEBUG]  Connected to InMemoryTrackerStore.
+2020-04-07 23:05:24,533 [DEBUG]  Connected to lock store 'InMemoryLockStore'.
+2020-04-07 23:05:24,819 [DEBUG]  Extracted model to 'C:\Users\ASUS\AppData\Local\Temp\tmp9ltq_o7d'.
+2020-04-07 23:05:24,823 [DEBUG]  Using yaml library: c:\users\asus\miniconda3\envs\rasa\lib\site-packages\ruamel\yaml\__init__.py
+2020-04-07 23:05:25,404 [DEBUG]  Instantiated NLG to 'TemplatedNaturalLanguageGenerator'.
+2020-04-07 23:07:06,644 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/parse?project=current&token='
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2020-04-07 23:09:48,924 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/favicon.ico'
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /favicon.ico not found
+2020-04-07 23:10:40,733 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/parse?project=current&token='
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2020-04-07 23:11:10,216 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/parse?project=current&token='
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2020-04-07 23:11:35,071 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/parse?project=current&token='
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2020-04-07 23:12:05,629 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/parse?project=current&token='
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2020-04-07 23:12:35,473 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/parse?project=current&token='
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2020-04-07 23:13:29,519 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/parse?project=current&token='
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
+2020-04-07 23:14:39,991 [ERROR]  Exception occurred while handling uri: 'http://07e546b5.ngrok.io/parse?project=current&token='
+Traceback (most recent call last):
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\app.py", line 940, in handle_request
+    handler, args, kwargs, uri, name = self.router.get(request)
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 411, in get
+    return self._get(request.path, request.method, "")
+  File "c:\users\asus\miniconda3\envs\rasa\lib\site-packages\sanic\router.py", line 475, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /parse not found
