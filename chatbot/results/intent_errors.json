@@ -1,0 +1,58 @@
+[
+  {
+    "text": "Make me laugh",
+    "intent": "get_happy_images",
+    "intent_prediction": {
+      "name": "telljoke",
+      "confidence": 0.5049832463264465
+    }
+  },
+  {
+    "text": "hello how are you",
+    "intent": "greet",
+    "intent_prediction": {
+      "name": "ask_howdoing",
+      "confidence": 0.5365099310874939
+    }
+  },
+  {
+    "text": "ok, thanks!!",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.5045769810676575
+    }
+  },
+  {
+    "text": "thanks a lot",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.5056390762329102
+    }
+  },
+  {
+    "text": "amazing thanks",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.5756041407585144
+    }
+  },
+  {
+    "text": "cool, thanks",
+    "intent": "thank",
+    "intent_prediction": {
+      "name": "thankyou",
+      "confidence": 0.5835489630699158
+    }
+  },
+  {
+    "text": "thanks for the help",
+    "intent": "thankyou",
+    "intent_prediction": {
+      "name": "thank",
+      "confidence": 0.5724318027496338
+    }
+  }
+]
