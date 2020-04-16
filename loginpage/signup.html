@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up Form by Colorlib</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #hidden_div {
+    display: none;
+}
+    </style>
+</head>
+<body>
+
+    <div  style = "padding-top: 4%;padding-bottom: 4%;">
+
+        <!-- Sign up form -->
+        <section class="signup">
+            <div class="container">
+                <div class="signup-content">
+                    <div class="signup-form">
+                        <h2 class="form-title">Sign up</h2>
+                        <form method="POST" class="register-form" id="register-form" > 
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="name" id="name" placeholder="Your Name" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name   "></i></label>
+                                <select id="type" name="type" style="display: block;border: none;padding: 0px 30px; font-family: Poppins;box-sizing: border-box;" onchange="showDiv('hidden_div', this)" required>
+                                    <option value="" disabled selected> Choose a option </option>
+                                    <option value="Doctor">Doctor</option>
+                                    <option value="Patient">Patient</option>
+                                    <option value="Clinican">Clinican</option>
+                                </select>
+                                <div style="display: block;border: none;border-bottom: 1px solid #999; padding: 6px 100px; font-family: Poppins; box-sizing: border-box;">
+                                </div>
+                            </div>
+                            <div class="form-group" id="hidden_div">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="institute" id="name" placeholder="Your Instituition"/ required>
+                            </div>
+                            <div class="form-group" id="hidden_div">
+                                <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="specilization" id="name" placeholder="Your Specilization"/ required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email"><i class="zmdi zmdi-email"></i></label>
+                                <input type="email" name="email" id="email" placeholder="Your Email" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass"><i class="zmdi zmdi-lock"></i></label>
+                                <input type="password" name="pass" id="pass" placeholder="Password" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password" required/>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
+                                <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
+                            </div>
+                            <div class="form-group form-button">
+                                <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="signup-image">
+                        <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
+                        <a href="login.html" class="signup-image-link">I am already member</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+    </div>
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    function showDiv(divId, element)
+    {
+        document.getElementById(divId).style.display = element.value == 'Doctor'|| 'Clinician' ? 'block' : 'none';
+        document.getElementById(divId).style.display = element.value == 'Patient' ? 'none' : 'block';
+    }
+    </script>
+
+</body>
+</html>
